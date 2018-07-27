@@ -1,0 +1,16 @@
+<table class="table">
+<thead>
+  <th></th>
+  <th>Id</th>
+  <th>UserId</th>
+  <th>Title</th>
+  <th>Completed</th>
+</thead>
+<tr *ngFor="let item of todos">
+  <td><a class="btn btn-xs btn-success" routerLink="todos/{{item.id}}">Go to details</a></td>
+  <td>{{item.id}}</td>
+  <td>{{item.userId}}</td>
+  <td>{{item.title}}</td>
+  <td>{{item.completed}}</td>
+</tr>
+</table>
